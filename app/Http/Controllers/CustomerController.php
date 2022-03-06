@@ -102,7 +102,7 @@ class CustomerController extends BaseController
      */
     public function index(CustomerFilters $filters)
     {
-        dd('feg');
+        // dd('feg'); 
         $customers = Customer::filter($filters);
 
         return $this->listResponse($customers);

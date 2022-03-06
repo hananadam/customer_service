@@ -49,7 +49,7 @@ class CustomerFilters extends QueryFilters
      */
     public function filter(string $filter = '') : Builder
     {
-        dd('filter');
+        //dd('filter');
         if (strlen($filter) == 0) {
             return $this->builder;
         }
